@@ -42,7 +42,7 @@ Any other props will be passed to the component (for example this is useful for 
 - Adding styles :
 
 ```js
-<Sticky style={ { backgroundColor: 'red' }}>
+<Sticky style={ { backgroundColor: 'red' } }>
   Your component
 </Sticky>
 ```
