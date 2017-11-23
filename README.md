@@ -19,7 +19,7 @@ npm install react-stickier
 ```
 
 
-[Demo](https://github.com/uroswork/react-stickier/)
+[Demo](https://uroswork.github.io/react-stickier/)
 
 
 ## Props
