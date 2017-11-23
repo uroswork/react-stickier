@@ -1,0 +1,54 @@
+// Demo
+
+.Wrapper {
+  color: white;
+  h1, h2 {
+    margin: 0;
+  }
+  a, h1 {
+    color: #555555;
+  }
+}
+
+.Menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.Menu-about {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.Content {
+  background: linear-gradient(blue, red 140%);
+}
+
+.Content-inside {
+  padding: 100px 20px;
+  height: 2000px;
+}
+
+.Demo-one {
+  text-align: center;
+}
+
+.Demo-three {
+  height: 100vh;
+  background-color: seagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Demo-three--mid {
+  display: flex;
+  flex-direction: column;
+  code {
+    margin-top: 10px;
+  }
+}
