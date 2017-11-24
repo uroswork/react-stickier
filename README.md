@@ -1,7 +1,7 @@
 ## Stickier -  Sticky React Component
 
-Stickier is React component wrapper, using `position: sticky` in browsers
-that supports this property, and for browsers that does not support it,
+Stickier is a React component wrapper, that uses `position: sticky` in browsers
+that support this property, and for browsers that do not support it,
 [this awesome polyfill by wilddeer](https://github.com/wilddeer/stickyfill) is used.
 
 ## How to use

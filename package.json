@@ -1,10 +1,10 @@
 {
   "name": "react-stickier",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "private": false,
   "license": "MIT",
   "main": "lib/index.js",
-  "description": "",
+  "description": "Stickier is a React component wrapper,",
   "scripts": {
     "build-docs": "rm -rf ./docs && NODE_ENV=\"production\" webpack",
     "build": "rm -rf ./lib && NODE_ENV=\"production\" babel ./src --out-dir ./lib",
