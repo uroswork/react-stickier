@@ -13,9 +13,7 @@ npm install react-stickier
 ` import Sticky from 'react-stickier'`
 
 ```js
-<Sticky>
-  Your component
-</Sticky>
+<Sticky>Your component</Sticky>
 ```
 
 
