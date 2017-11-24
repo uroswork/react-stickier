@@ -1,10 +1,22 @@
 // Demo
 
+div {
+  font-family: 'Dosis', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+}
+
 .Wrapper {
   color: white;
+  display: flex;
+  flex-direction: column;
   h1, h2 {
     margin: 0;
   }
+
+  h1 {
+    font-size: 16px;
+  }
+
   a, h1 {
     color: #555555;
   }
@@ -14,7 +26,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   padding: 10px 20px;
+  transition: 1s all;
+  background-color: white;
 }
 
 .Menu-about {
@@ -28,12 +43,18 @@
 }
 
 .Content-inside {
-  padding: 100px 20px;
-  height: 2000px;
+  height: 1000px;
+  padding-top: 100px;
 }
 
 .Demo-one {
   text-align: center;
+  padding-bottom: 20px;
+}
+
+.Demo-two {
+  font-style: italic;
+  margin-top: 100px;
 }
 
 .Demo-three {
@@ -43,6 +64,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .Demo-three--mid {
@@ -51,4 +73,64 @@
   code {
     margin-top: 10px;
   }
+}
+
+.Demo-one-upper {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.Demo-three--text {
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .Menu {
+    flex-direction: row;
+  }
+}
+
+.noScrollable {
+  overflow: hidden;
+}
+
+.Button-toTop {
+  border: 0;
+  background-color: whitesmoke;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  padding: 0;
+  opacity: 0.8;
+  transform: rotate(-18deg);
+  transition: 0.3s all;
+  outline: 0;
+  &:hover {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.Button-toTop--Inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 1.5px;
+}
+
+.Button-toTop-arrow {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  transform: rotate(180deg);
 }
