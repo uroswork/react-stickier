@@ -10,9 +10,9 @@ that support this property, and for browsers that do not support it,
 npm install react-stickier
 ```
 
-` import Sticky from 'react-stickier'`
-
 ```js
+import Sticky from 'react-stickier'
+
 <Sticky>Your component</Sticky>
 ```
 
