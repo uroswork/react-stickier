@@ -1,17 +1,17 @@
 {
   "name": "react-stickier",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "private": false,
   "license": "MIT",
   "main": "lib/index.js",
-  "description": "Stickier is a React component wrapper,",
+  "description": "Stickier is a React component wrapper, that uses `position: sticky` in browsers that support this property, and for browsers that do not support it, polyfill by wilddeer is used.",
   "scripts": {
     "build-docs": "rm -rf ./docs && NODE_ENV=\"production\" webpack",
     "build": "rm -rf ./lib && NODE_ENV=\"production\" babel ./src --out-dir ./lib",
     "build-all": "npm run build && npm run build-docs",
     "lint": "eslint ./src/js ./webpack.config.js -f table --ext .js --ext .jsx || true",
     "preview": "rm -rf ./dist && NODE_ENV=\"production\" webpack-dev-server",
-    "publish": "npm run build && npm publish",
+    "build-and-publish": "npm run build && npm publish",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
