@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Stickyfill from 'stickyfilljs';
 import PropTypes from 'prop-types';
-import StickyfillUniversal from 'stickyfill.es6.js';
+import Stickyfill from 'stickyfilljs/dist/stickyfill.es6.js';
 
 function omit(object, keysToOmit) {
   const result = {};
@@ -17,13 +16,11 @@ function omit(object, keysToOmit) {
 
 export default class Sticky extends Component {
   componentDidMount() {
-    const StickyFill = this.props.isUniversal ? StickyfillUniversal : Stickyfill;
-    StickyFill.add(this.element);
+    Stickyfill.add(this.element);
   }
 
   componentWillUnmount() {
-    const StickyFill = this.props.isUniversal ? StickyfillUniversal : Stickyfill;
-    StickyFill.remove(this.element);
+    Stickyfill.remove(this.element);
   }
 
   render() {
@@ -40,7 +37,6 @@ export default class Sticky extends Component {
 
     const propsToOmit = [
       'ref',
-      'isUniversal',
       'children',
       'className',
       'style',
@@ -60,14 +56,12 @@ export default class Sticky extends Component {
 }
 
 Sticky.propTypes = {
-  isUniversal: PropTypes.bool,
   className: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.any.isRequired,
 };
 
 Sticky.defaultProps = {
-  isUniversal: false,
   className: '',
   style: {},
 };

@@ -26,8 +26,6 @@ import Sticky from 'react-stickier'
 
 - `className` - CSS class to be applied to the component. Default class is `StickyElement`
 
-- `isUniversal` - Boolean - if true supports Universal rendering, default is false.
-
 Any other props will be passed to the component (for example this is useful for aria-* props).
 
 ## Examples
